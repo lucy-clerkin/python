@@ -7,7 +7,7 @@
 
 import sys
 
-#first calculate the number of terms, and which are odd and which are even
+#first calculate the number of terms
 
 def power2(i):
     bs = [] #list of remainders after dividing by 2
@@ -17,16 +17,16 @@ def power2(i):
         i = i >> 1 #divides i by 2 to give the next i
     print bs
 
-#now make a list of the powers of 2 corresponding to each of the elements in bs
+#
 
     p = 1
     ps = []
-    j = 0
+    i = 0
     for b in bs:
         if (bs[i] == 1):
             ps.append(p)
         p = p * 2 # Do a power.
-        j = j + 1 # Increment index, i.e. the element of the list bs
+        i = i + 1 # Increment index
     nups = []
     # Cycle round the list.
     for p in ps:
